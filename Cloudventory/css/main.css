@@ -1,0 +1,194 @@
+/*----- General Styles -----*/
+
+body{
+    background:url('../images/bg.png') top center no-repeat, #89C4F4;
+    background-size:100% 100%;
+    font:12pt/normal 'Helvetica', sans-serif;
+    color:#34495E;
+    height:800px;
+}
+
+/*----- Heading Tag Styles-----*/
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:0;
+}
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight:400;
+}
+header h2{
+    color:#fff;
+    margin-top:0;
+    font-size:.9em;
+}
+
+/*----- Nav Styles -----*/
+
+nav{
+    float:right;
+    width:10%;
+    z-index:10;
+    margin-right:50px;
+}
+nav ul{
+    width:100%;
+}
+nav ul li{
+    display:none;
+    list-style-type:none;
+    background:#fff;
+    width:98%;
+    padding:1%;
+}
+nav ul:hover li{
+    display:block;
+}
+nav ul li a{
+    color:inherit;
+    text-decoration:none;
+    padding:10px 10px;
+}
+nav ul li a:hover{
+    text-decoration:underline;
+}
+nav img{
+    width:25px;
+}
+
+/*----- Form Styles -----*/
+
+form, section{
+    width:50%;
+    padding:2%;
+    margin:2.5% auto;
+    background:#E4F1FE;
+    border-radius:5px;
+    border-right: 2px solid #a2cffc;
+    border-bottom: 2px solid #a2cffc;
+    box-shadow: 2px 3px 7px rgba(44, 62, 80, .2);
+}
+fieldset{
+    border:1px solid #527395;
+    border-radius:3px;
+}
+label, legend{
+    display:block;
+    margin-top:20px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:.6em;
+    color:#527395;
+}
+input[type="radio"]:nth-of-type(2){
+    margin:1% 0 1% 10%;
+}
+input[type="text"]{
+    width:96%;
+    padding:2%;
+    margin:2% auto;
+    border-radius:3px;
+    border:none;
+}
+input[type="submit"]{
+    border-radius:3px;
+    font-family: 'Quicksand', sans-serif;
+    margin:5% auto;
+    display:block;
+    border:none;
+    width:45%;
+    padding:1% 2%;
+    text-transform:uppercase;
+    font-size:1.2em;
+    background:#4B77BE;
+    color:#ececec;
+    border-right: 2px solid #345891;
+    border-bottom: 2px solid #345891;
+    box-shadow: 2px 3px 7px rgba(44, 62, 80, .2);
+    transition-duration:500ms;
+}
+
+input[type="submit"]:hover{
+    cursor:pointer;
+    background:#345891;
+}
+
+.select-style{
+    background:url('../images/down.png') no-repeat 98% 30%, white;
+    height: 50px;
+    overflow: hidden;
+    width: 96%;
+    margin:2% auto;
+    border-radius:3px;
+    z-index:10;
+    padding:0 2%;
+}
+.select-style select{
+    background:none;
+    border: none;
+    font-size:1em;
+    height: 50px;
+    padding: 2%;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+select:active, select:focus{
+    outline:none;
+}
+
+/*----- Button Styles -----*/
+
+.button{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration:none;
+    display:block;
+    width:40%;
+    padding:1% 2%;
+    text-transform:uppercase;
+    font-size:1.2em;
+    border-radius:3px;
+    margin:5% auto;
+    text-align:center;
+    background:#4B77BE;
+    color:#ececec;
+    border-right: 2px solid #345891;
+    border-bottom: 2px solid #345891;
+    box-shadow: 2px 3px 7px rgba(44, 62, 80, .2);
+    transition-duration:500ms;
+}
+.button:hover{
+    cursor:pointer;
+    background:#345891;
+}
+
+.button-small{
+    display:inline-block;
+    width:15%;
+    margin:0 auto;
+    font-size:.75em;
+}
+
+/*----- Table Styles -----*/
+
+table{
+    width:98%;
+    padding:2%;
+    border-collapse:collapse;
+}
+tr{
+    width:90%;
+    padding:2%;
+}
+tr td{
+    width:48%;
+    padding:1%;
+}
+
+tr:nth-of-type(even){
+    background:#fff;
+}

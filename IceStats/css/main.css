@@ -1,0 +1,192 @@
+/*----- Body Styles -----*/
+body{
+    background:#0a0f13;
+    font:12pt/normal 'Helvetica', sans-serif;
+    color:#fff;
+}
+
+/*----- Headings -----*/
+h1{
+    color:#E4F1FE;
+    font-family: 'Bevan', cursive;
+    font-size:4em;
+    margin:0;
+    position:fixed;
+    z-index:12;
+    top:0;
+    left:0;
+    height:50px;
+}
+h2{
+    position:relative;
+    z-index:10;
+    text-align:center;
+    font-family: 'Baloo Tamma', cursive;
+    font-size:1.5em;
+
+}
+.player-info h2{
+    margin-bottom:0;
+}
+h3{
+    text-align:center;
+    margin-top:0;
+}
+
+/*----- Header and Nav Styles -----*/
+header{
+    margin-bottom:2%;
+    height:50px;
+}
+nav{
+    text-align:center;
+    margin-top:20px;
+    margin-left:20%;
+    position:relative;
+    z-index:15;
+}
+nav .button, nav a, .button-back{
+    width:15%;
+    padding:1% 2%;
+    background:rgba(192, 57, 43,.95);
+    margin:1%;
+    border-radius:5px;
+    color:#fff;
+    text-decoration:none;
+    font-family: 'Baloo Tamma', cursive;
+    transition-duration:500ms;
+}
+
+nav .button:hover, nav a:hover, .button-back:hover{
+    background:rgba(192, 57, 43,.65);
+}
+
+/*----- Containers -----*/
+.container, .player-info{
+    width:80%;
+    padding:2%;
+    margin:0 auto;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+}
+.container{
+    text-align:center;
+}
+
+.container .button-wrap{
+    width:15%;
+    padding:2%;
+    height:200px;
+    display:inline-block;
+    text-align:center;
+    margin:1% auto;
+    border-radius:5px;
+    overflow:hidden;
+    position:relative;
+    transition-duration:500ms;
+    border:5px solid #fff;
+}
+.container .button-wrap:hover{
+    box-shadow: 3px 5px 7px rgba(0,0,0,.25);
+    z-index:10;
+}
+
+/*----- Player 'Cards' Containers -----*/
+.container #gretzkey{
+    display:block;
+    margin:0 auto;
+    background:url('../img/gretzkey.jpg')top center no-repeat;
+    background-size:100% 100%;
+}
+.container #messier{
+    background:url('../img/messier.jpg')top center no-repeat;
+    background-size:100% 100%;
+    transform: rotate(15deg);
+}
+.container #francis{
+    background:url('../img/francis.jpg')top center no-repeat;
+    background-size:100% 100%;
+    transform: rotate(-15deg);
+}
+.container #howe{
+    background:url('../img/howe.jpg')top center no-repeat;
+    background-size:100% 100%;
+    transform: rotate(15deg);
+}
+.container #jagr{
+    background:url('../img/jagr.jpg')top center no-repeat;
+    background-size:100% 100%;
+    transform: rotate(-15deg);
+}
+
+.container a{
+    color:rgb(228,241,254);
+    background:rgba(0,0,0,.75);
+    width:100%;
+    text-decoration:none;
+    font-family: 'Baloo Tamma', cursive;
+    font-size:1.5em;
+    height:50px;
+    position:absolute;
+    bottom:100px;
+    left:0;
+}
+
+/*----- Player Info Page -----*/
+/* Right is a container used to place player stats next to player image */
+.right{
+    width:50%;
+    padding:2%;
+    float:right;
+}
+
+img{
+    width:40%;
+    float:left;
+    border-radius:10px;
+    z-index:10;
+    position:relative;
+}
+
+#button-back{
+    width:30%;
+    padding:1% 2%;
+    background:rgba(192, 57, 43,.95);
+    margin:1%;
+    border-radius:5px;
+    color:#fff;
+    text-decoration:none;
+    font-family: 'Baloo Tamma', cursive;
+    transition-duration:500ms;
+    float:right;
+    text-align:center;
+}
+
+#button-back:hover{
+    background:rgba(192, 57, 43,.65);
+}
+
+/*----- Table Styles -----*/
+table{
+    border-collapse:collapse;
+    margin:2% auto;
+}
+
+td{
+    width:40%;
+    padding:2%;
+}
+td:nth-of-type(1){
+    text-align:right;
+}
+tr:nth-of-type(odd){
+    background:/*rgba(31, 58, 147,.5)*/rgba(255,255,255,.5);
+}
+
+/*----- Logo Style-----*/
+.logo{
+    border-radius:0;
+    width:60%;
+    transform:rotate(-45deg)
+}
